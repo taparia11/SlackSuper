@@ -1,0 +1,588 @@
+@font-face {
+  font-family: SlackLato;
+  src: url('../assets/Lato-Reg.ttf');
+}
+
+.sideBar {
+  width: 15%;
+  overflow: scroll;
+  height: auto;
+}
+
+body {
+  overflow-y: hidden;
+  background: #121016;
+  font-family: SlackLato;
+}
+
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+​ html::-webkit-scrollbar {
+  width: 0px;
+  /* For Chrome, Safari, and Opera */
+}
+
+.dataContent {
+  padding: 2rem 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.archive h1 {
+  color: #FFFFFF;
+}
+
+.dataContent h1 {
+  margin-left: 2rem;
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+
+.dataContent h5 {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.message-link-button {
+  margin-bottom: 0px !important;
+  margin-left: 20px;
+  background-color: transparent;
+  font-size: small;
+  font-weight: 200;
+  color: rgb(200, 200, 200);
+  border: gray 1px solid;
+}
+
+.message-link-button:hover {
+  text-decoration: underline;
+}
+
+.Card {
+  border: none;
+  display: flex;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  width: 55%;
+  margin-bottom: 1rem !important;
+  width: fit-content;
+  height: fit-content;
+}
+
+.ren {
+  width: 70rem;
+  width: 100%;
+  overflow-y: scroll;
+  height: 86vh;
+}
+
+.Card img {
+  margin-right: 1rem;
+  margin-top: 0.6rem;
+  width: 3rem;
+}
+
+span {
+  color: grey;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.thread {
+  margin-left: 2rem;
+  width: 33rem;
+}
+
+.threadmess {
+  margin-left: 0rem;
+}
+
+.ThreadBtn {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 4rem;
+  color: rgb(29, 155, 209);
+  margin-left: 7.5rem;
+}
+
+.ThreadBtn:hover {
+  border-radius: 4px;
+  text-decoration: underline;
+}
+
+.Categories h1 {
+  margin-left: 3rem;
+  margin-top: 3rem;
+  color: #FFFFFF;
+}
+
+.routeTiles {
+  margin-left: 6rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.routeTiles .card {
+  font-weight: bolder;
+  padding: 1.5rem 1rem;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.card {
+  width: 30rem;
+}
+
+.routeTiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.card a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.message {
+  width: 50rem;
+}
+
+#cardBody {
+  display: flex;
+  padding-right: 2rem;
+}
+
+#Search {
+  height: 30px;
+  background: #41464b;
+  border-radius: 4px;
+  width: 43rem;
+  margin-left: -8rem;
+  border: 1px solid #ffffffb3;
+}
+
+#searchBar::placeholder {
+  color: #ffffffb3;
+}
+
+#searchBar {
+  width: 40rem;
+  height: 26px;
+  outline: none;
+  border: none;
+  background: #41464b;
+  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 #00000014;
+  padding: 10px 10px;
+}
+
+.archive {
+  display: flex;
+}
+
+.messageBundle {
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  transition: 0.3s;
+  background-color: rgb(26, 29, 33);
+  width: 64.2rem;
+}
+
+.messageOnly {
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  transition: 0.3s;
+  background-color: rgb(26, 29, 33);
+  width: 100%;
+}
+
+.MessageContainer {
+  height: 75.5vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.btn {
+  height: 3rem;
+}
+
+.breadCrumbs {
+  margin-left: 2.5rem;
+  color: gray;
+  font-weight: bold;
+  width: 35rem;
+}
+
+#thred {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+#cross {
+  margin-left: 24rem;
+  cursor: pointer;
+}
+
+.dropdown-menu.show {
+  display: grid;
+  padding: 1.5rem 1rem;
+}
+
+.dropdown-menu.show input,
+.dropdown-menu.show select {
+  margin-bottom: 0.8rem;
+  width: 15rem;
+  padding: 0.3rem 0rem;
+}
+
+.dropdown-menu.show label {
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+
+.btn-success {
+  width: 15rem;
+  margin-top: 1.5rem;
+}
+
+.dropdown {
+  margin-left: auto;
+  margin-right: 4rem;
+}
+
+.btn {
+  height: 2.7rem;
+  border: 0.5px solid gray;
+  margin-top: 0.5rem;
+}
+
+.threadmess img {
+  margin-right: 1rem;
+  margin-top: 0.6rem;
+  width: 3rem;
+}
+
+.MessSection {
+  display: flex;
+}
+
+.ThreadContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 75.5vh;
+  padding: 0rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  transition: 0.3s;
+  background-color: rgb(26, 29, 33);
+}
+
+.threadHead {
+  display: flex;
+  background-color: rgb(26, 29, 33);
+  padding: 1rem 1rem;
+  padding-bottom: 0.45rem;
+  box-shadow: 0 1px 0 0 rgb(232, 232, 232, 0.13);
+  border: 0.5px solid rgb(232, 232, 232, 0.13);
+}
+
+.threadHead span {
+  color: #ffffffb3;
+}
+
+.cross {
+  margin-left: auto;
+  margin-right: 1rem;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.cross p {
+  color: #FFFFFF;
+}
+
+.threadHead h1 {
+  font-size: 24px;
+  color: #ffffffb3;
+  margin-bottom: 0rem;
+}
+
+.date {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 24px 0 20px;
+  background: gray;
+}
+
+.date text {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.mention {
+  background-color: #FFC898;
+  color: #000000;
+}
+
+.card-text {
+  white-space: pre-line;
+}
+
+.text-muted {
+  margin-left: 1rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  width: 90%;
+}
+
+.card-title {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.card-title small {
+  color: rgb(171, 171, 173) !important;
+}
+
+.card-text {
+  color: rgb(171, 171, 173);
+  margin-top: 0.5rem;
+}
+
+.embed {
+  border: 0px;
+  border-left: 4px;
+  border-radius: 3px;
+  margin-top: 7px;
+  padding-left: 12px;
+  border-style: ridge;
+}
+
+.embed-service-icon {
+  height: auto;
+  width: auto;
+  max-width: 16px;
+  max-height: 16px;
+  margin: 0px !important;
+  margin-right: 8px !important;
+}
+
+.embed p {
+  color: rgb(171, 171, 173);
+}
+
+.embed-service {
+  font-size: 14px;
+  font-weight: 800;
+  color: rgb(171, 171, 173);
+}
+
+.embed-link {
+  font-weight: 600;
+}
+
+.search-channel {
+  font-size: medium;
+}
+
+.search-result-channel {
+  font-size: small;
+  font-weight: 600;
+}
+
+.byDate span .MuiSwitch-root.MuiSwitch-sizeMedium.css-julti5-MuiSwitch-root {
+  margin-left: 18.3rem;
+}
+
+.breadCrumbs span {
+  font-size: 16px;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#MessIcon {
+  margin-right: 0.5rem;
+}
+
+.MuiSwitch-root.MuiSwitch-sizeMedium.css-julti5-MuiSwitch-root {
+  width: 5rem;
+  margin-left: 17rem;
+}
+
+.searchIcon {
+  height: 1.2rem;
+  margin-top: 0.3rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  color: #ffffffb3;
+}
+
+#Search input {
+  font-size: 13px;
+  color: #ffffffb3;
+}
+
+.date text {
+  border-radius: 24px;
+  border: 1px solid gray;
+  background: rgb(26, 29, 33);
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.FilterCategory {
+  height: 1.2rem;
+  margin-top: 0.3rem;
+  padding-right: 0.6rem;
+  margin-left: auto;
+  color: #ffffffb3;
+}
+
+.MessageHeader h1 {
+  font-size: 24px;
+  color: #ffffffb3;
+  margin-bottom: 0rem;
+}
+
+.MessageHeader {
+  padding: 1rem 1rem;
+  border: 0.5px solid rgb(232, 232, 232, 0.13);
+}
+
+.MessageContainer button {
+  margin-bottom: 2rem;
+}
+
+/*-------Popup-----*/
+.PopupContent {
+  display: inline-grid;
+  background-color: rgb(26, 29, 33);
+  width: -webkit-fill-available;
+}
+
+.popup-content {
+  max-width: 520px;
+  width: 100%;
+  padding: 0 !important;
+  border: none !important;
+  height: auto !important;
+}
+
+.PopupContent label {
+  color: rgb(232, 232, 232);
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.PopupHeader h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(232, 232, 232);
+}
+
+.PopupHeader {
+  margin-bottom: 10px;
+  padding: 20px 30px;
+  display: flex;
+}
+
+.PopupContent input {
+  margin-bottom: 12px;
+  height: 36px;
+  background-color: transparent;
+  color: rgb(232, 232, 232);
+  border-radius: 4px;
+  padding: 3px 12px 5px;
+}
+
+.PopupContent select {
+  margin-bottom: 12px;
+  height: 36px;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  color: gray;
+  padding: 3px 12px 5px;
+  border-radius: 4px;
+}
+
+.PopupPlaceholders {
+  display: inline-grid;
+  padding: 0 30px;
+}
+
+.PopupPlaceholders p,
+.byDate {
+  color: rgb(232, 232, 232);
+}
+
+.PopupPlaceholders p {
+  margin-top: 1.5rem;
+}
+
+.PopBtns {
+  margin-left: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.btn-dark {
+  margin-right: 12px;
+}
+
+.btn-dark {
+  font-size: 15px;
+  height: 36px;
+  min-width: 80px;
+  padding: 0 12px 1px;
+}
+
+.btn-dark:hover {
+  background-color: rgb(34, 37, 41);
+  outline: initial;
+  border: 1px solid #FFFFFF;
+}
+
+.btn-success {
+  font-size: 15px;
+  height: 36px;
+  width: 80px;
+  padding: 0 12px 1px;
+}
+
+.FormCross {
+  width: 1.5rem;
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.dateFilter {
+  margin-top: 1rem;
+}
+
+.ToDate {
+  margin-left: 4rem;
+}
+
+.dateFilter label {
+  margin-right: 1rem;
+}
